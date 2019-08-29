@@ -1,6 +1,6 @@
 typealias Builder = GraphQLBuilder.() -> Unit
 
-class GraphQLBuilder(val name: String) {
+class GraphQLBuilder(private val name: String) {
     val childs = mutableListOf<GraphQLBuilder>()
 
     override fun toString(): String {
